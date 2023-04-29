@@ -1,0 +1,246 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+/*Xây dựng phần ảnh Banner*/
+.bannerimg {
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 50px 50px 0px 50px;
+}
+.name-block {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/*Xây dựng Navbar*/
+#nav-bar {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.6px solid #aaa;
+  border-bottom: 0.6px solid #aaa;
+}
+.nav-bar-icon {
+  display: inline-block;
+  inline-size: 200px;
+}
+#nav-bar .container a {
+  text-decoration: none;
+  color: black;
+}
+#nav-bar .container i {
+  color: #0079bc;
+}
+/*(Nâng cao) Bổ sung ảnh cá nhân*/
+#nav-bar .container img {
+  border-radius: 50%;
+  border: 20px solid #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 200px;
+}
+/*Xây dựng Thông tin cá nhân*/
+.container-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+}
+#target {
+  padding: 60px;
+  background-color: gainsboro;
+}
+#personal-info {
+  padding: 60px;
+  background-color: #d6d6d6;
+}
+.container-about ul {
+  padding: 0px;
+  list-style: none;
+}
+.container-about h3 {
+  padding-bottom: 20px;
+}
+.container-about li {
+  padding: 0px;
+}
+.container-about a {
+  text-decoration: none;
+}
+/*Xây dựng phần Thông tin nghề nghiệp */
+#job-info .container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-template-rows: repeat(2, 800px);
+}
+.container .container-item {
+  border: 1px solid #c7c7c7;
+  padding: 30px;
+
+  display: grid;
+
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 60px auto;
+}
+.container-item ul {
+  list-style: none;
+  padding-top: 10px;
+}
+.container-item i {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-item h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-detail {
+  padding-top: 20px;
+  grid-column: 1/3;
+}
+.info-detail p {
+  padding-top: 10px;
+}
+
+#favorites {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 40px);
+}
+#favorites p {
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+}
+#favorites div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+}
+#favorites i {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #57d8ac;
+  border-radius: 50%;
+  color: grey;
+}
+.info-detail span {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+/*Xây dựng phần Chứng chỉ - Giải thưởng*/
+#certificate .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+}
+#certificate .container h1 {
+  grid-column: 1/3;
+  padding-bottom: 20px;
+}
+.duan {
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+.duan div {
+  padding-left: 20px;
+}
+#WEB {
+  border-right: 1px solid #d6c08d;
+}
+#DBI {
+  border-top: 1px solid #d6c08d;
+}
+/*Xây dựng phần Chứng chỉ - Giải thưởng*/
+#project .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+#project .container h1 {
+  grid-column: 1/4;
+}
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.project-title {
+  padding-top: 10px;
+}
+.project-detail div {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.project-detail table {
+  padding-top: 10px;
+}
+.project-detail div p {
+  font-size: 12px;
+  color: white;
+  background-color: #0079bc;
+  border: 4px solid #0079bc;
+  border-radius: 12px;
+}
+.project-detail i {
+  font-style: normal;
+}
+td {
+  vertical-align: text-top;
+  text-align: left;
+  border-top: 1px solid silver;
+}
+/*Xây dựng phần Liên hệ*/
+#footer .container {
+  width: 800px;
+}
+#footer .container a {
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 40px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+#footer .container i {
+  color: #0079bc;
+  font-size: 30px;
+}
