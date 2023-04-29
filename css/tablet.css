@@ -1,3 +1,111 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* các style cho tablet ở đây */
+  section > .container {
+    width: 100%;
+    margin: auto;
+    display: block;
+
+    padding: 10px;
+  }
+  /*Xây dựng phần ảnh Banner*/
+  .bannerimg {
+    padding: 0;
+  }
+  .name-block {
+    top: calc(50% - 200px);
+  }
+  /*Xây dựng Navbar*/
+  #about {
+    width: minmax(0, 767px);
+    padding: 40px 0;
+  }
+
+  #about .container-about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about #target,
+  #about #personal-info {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .info li {
+    font-size: 14px;
+  }
+
+  .icon-twitter,
+  .icon-facebook,
+  .icon-gplus,
+  .icon-linkedin {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  .nav-bar-icon {
+    display: inline-block;
+    inline-size: calc(25% - 30px);
+  }
+  /*(Nâng cao) Bổ sung ảnh cá nhân*/
+  #nangcao {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  #job-info .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container .container-item {
+    width: 100%;
+  }
+  /*Xây dựng Thông tin cá nhân*/
+  .container-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #target,
+  #personal-info {
+    height: 350px;
+    padding: 30px;
+  }
+
+  /*Xây dựng phần Thông tin nghề nghiệp */
+
+  .duan {
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .duan img {
+    width: 300px;
+  }
+  /* Xây dựng phần Chứng chỉ - Giải thưởng */
+  #project .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+
+    width: 100%;
+  }
+  #project .container h1 {
+    padding-left: 60px;
+  }
+  .project-detail {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .project-detail img {
+    width: 100%;
+  }
+
+  /*Xây dựng footer*/
+  #footer .container {
+    width: 100%;
+  }
 }
